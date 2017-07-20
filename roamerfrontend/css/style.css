@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One|Roboto');
+
+body {
+    padding-top: 54px;
+    background-color: rgb(255,229,204);
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+header.masthead {
+    background: url('https://www.bitglass.com/hs-fs/hubfs/content/static_images/hero/photo-1445294812422-0bb9cb94c286.jpeg?t=1494605847266&width=5483&name=photo-1445294812422-0bb9cb94c286.jpeg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header.masthead > .overlay {
+    padding: 5rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+header.nychead {
+    background: url('https://static.pexels.com/photos/1139/black-and-white-city-skyline-buildings.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header.nychead > .overlay {
+    padding: 5rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+@media (min-width: 992px) {
+    header.nychead > .overlay {
+        padding: 10rem 0;
+    }
+}
+
+h1{
+    font-family: 'Patua One', cursive;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    font-family: 'Patua One', cursive;
+}

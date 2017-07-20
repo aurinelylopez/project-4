@@ -1,0 +1,30 @@
+{
+    "version": "4.0.0-alpha",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    
+    },
+    "author": "Start Bootstrap",
+    "contributors": [
+        
+    ],
+    "repository": {
+        "type": "git",
+        
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "jquery": "^3.2.1",
+        "tether": "^1.4.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp": "^3.9.1"
+    }
+}

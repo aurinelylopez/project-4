@@ -1,0 +1,31 @@
+body{
+        background: url('https://www.bitglass.com/hs-fs/hubfs/content/static_images/hero/photo-1445294812422-0bb9cb94c286.jpeg?t=1494605847266&width=5483&name=photo-1445294812422-0bb9cb94c286.jpeg') no-repeat center center scroll;
+}
+
+.map {
+    height: 400px;
+    width: 400px;
+    margin-top: 60px;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  
+  body{
+    background:  url('../images/mob-background.jpg') no-repeat center center fixed !important;
+    background-size: cover;
+  }
+}

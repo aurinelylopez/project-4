@@ -1,0 +1,16 @@
+<div class="table-head">
+    <div>Cities</div>    
+    <div>Tours and attractions</div>
+    <div>Tour duration</div>
+    <div>Description</div> 
+</div>
+
+<% for(let i = 0; i < data.length; i++){ %>
+    <div class="entry-div <%= data[i].cities %>" data-id=<%=data[i].idc%>>
+        <div class="category-div name-div">
+            <a href="/cities/<%= data[i].idc%>"><%=data[i].cities%></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+<% } %>

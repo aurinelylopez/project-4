@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome to Roamer</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.js"></script>
+    
+
+</head>
+<body>
+	<div>
+	<nav class="top-nav">
+		<div id="logo">
+        	<img class"logo" src="http://i.imgur.com/yaHwdv0t.png" alt="">
+        </div>
+        <div class="top-ul">
+        	<ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:3000">Home</a>
+                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:3000/tours/1">Tours and Attractions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:3000/about">About</a>
+                </li>
+            </ul>
+        </div>
+	</nav>
+
+	<header class="myheader-tours">
+		<h1>Welcome to Roamer</h1>
+		<div class="select-tours">
+		<h4 class="arrival-tours">Please select your city of arrival:</h4>
+		</div>
+		
+
+		<div class="cities">
+		<ul>
+		<li class="citylist">
+		<a class="citylist" href="http://localhost:3000/tours/1"<div class="city-link">New York City(JFK)</a></li>
+		<li class="citylist">
+		<a  class="citylist"
+		href="http://localhost:3000/tours/5"<div class="city-link">Chicago(CHI)</a></li>
+		<li class="citylist">
+		<a class="citylist" href="http://localhost:3000/tours/2"<div class="city-link">Los Angeles(LAX)</a></li>
+		<li class="citylist">
+		<a class="citylist" href="http://localhost:3000/tours/4"<div class="city-link">Miami(MIA)</a></li>
+		<li class="citylist">
+		<a class="citylist" href="http://localhost:3000/tours/3"<div class="city-link">San Francisco(SFO)</a></li>
+		</ul>
+		</div>
+		</header>
+
+	<% for(let i =0; i < data.length; i++){ %>
+	<div class="tourscontainer">
+    
+
+	<div class="namecontainer">
+	<div><%=data[i].name%></div>
+	</div>
+
+	<div class="citiescontainer">
+	<div><%=data[i].cities%></div>
+	</div>
+     
+    <div class="duration">
+	<div><%=data[i].duration%></div>
+    </div>
+
+   <div class="tour-description">
+	<div><%=data[i].description%></div>
+	</div>
+
+	<div class="price">
+	<div><%=data[i].price%></div>
+	</div>
+
+	<div class="tour-images">
+	<div><img src="<%=data[i].image%>"</div>
+	<%} %>
+</div>
+</div>
+</div>
+
+    <footer class="myfooter">
+    <div class="footercontainer">
+
+    </div>
+
+</body>
+</html>
